@@ -1,0 +1,60 @@
+body{
+   background: rgb(238,174,202);
+   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1{
+   text-align: center;
+   color: #4a120f;
+}
+table {
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+.field{
+   background-color: aquamarine;
+
+}
+section{
+   width: 80%;
+   margin: 0 auto;
+}
+.field{
+   height: 50px;
+   width: 50px;
+   border: 1px solid rgb(71, 0, 0);
+   display: inline-block;
+}
+.field:hover{
+   background-color: rgb(210, 30, 156);
+}
+.upper{
+   border: none;
+   height: 50px;
+   width: 50px;
+   /* background: none; */
+   display: inline-block;
+}
+p.maps{
+   margin: 0 auto;
+   padding: 20px;
+}
+ol{
+   list-style: none;
+}
+.reset {
+   width: 33%;
+   height: 52px;
+   font-size: 19px;
+   border-radius: 17px;
+   background-color: #6e006b;
+   color: #fff;
+}
+.newGame{
+   width: 33%;
+   height: 52px;
+   font-size: 19px;
+   border-radius: 17px;
+   background-color: #ffee06;
+   border: 1px solid rgb(26, 180, 6);
+   color: rgb(65, 21, 21);
+}
