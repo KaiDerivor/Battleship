@@ -9,9 +9,10 @@ h1{
 table {
    margin: 0 auto;
    margin-bottom: 30px;
+   right: 50px;
 }
 .field{
-   background-color: aquamarine;
+   background-color: rgb(117, 233, 248);
 
 }
 section{
