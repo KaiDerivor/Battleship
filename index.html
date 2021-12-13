@@ -14,13 +14,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
   </script>
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>Welcome to Battleship!</h1>
+  <h1><i class="fas fa-ship"> </i> Welcome to Battleship! <i class="fas fa-ship"></i></h1>
 
   <div class="container-fluid">
     <div class="row no-gutters">
@@ -31,29 +32,38 @@
               <tr class="maps">
                 <td class="upper"></td>
                 <td class="upper">
-                  <p class="maps">1</p>
+                  <p class="maps">Р</p>
                 </td>
                 <td class="upper">
-                  <p class="maps">2</p>
+                  <p class="maps">Е</p>
                 </td>
                 <td class="upper">
-                  <p class="maps">3</p>
+                  <p class="maps">С</p>
                 </td>
                 <td class="upper">
-                  <p class="maps">4</p>
+                  <p class="maps">П</p>
                 </td>
                 <td class="upper">
-                  <p class="maps">5</p>
+                  <p class="maps">У</p>
                 </td>
                 <td class="upper">
-                  <p class="maps">6</p>
+                  <p class="maps">Б</p>
                 </td>
                 <td class="upper">
-                  <p class="maps">7</p>
+                  <p class="maps">Л</p>
+                </td>
+                <td class="upper">
+                  <p class="maps">І</p>
+                </td>
+                <td class="upper">
+                  <p class="maps">К</p>
+                </td>
+                <td class="upper">
+                  <p class="maps">А</p>
                 </td>
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">A</p>
                 </td>
 
@@ -64,9 +74,13 @@
                 <td class='field' id='04'></td>
                 <td class='field' id='05'></td>
                 <td class='field' id='06'></td>
+                <td class='field' id='07'></td>
+                <td class='field' id='08'></td>
+                <td class='field' id='09'></td>
+
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">B</p>
                 </td>
 
@@ -77,9 +91,12 @@
                 <td class='field' id='14'></td>
                 <td class='field' id='15'></td>
                 <td class='field' id='16'></td>
+                <td class='field' id='17'></td>
+                <td class='field' id='18'></td>
+                <td class='field' id='19'></td>
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">C</p>
                 </td>
 
@@ -90,9 +107,12 @@
                 <td class='field' id='24'></td>
                 <td class='field' id='25'></td>
                 <td class='field' id='26'></td>
+                <td class='field' id='27'></td>
+                <td class='field' id='28'></td>
+                <td class='field' id='29'></td>
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">D</p>
                 </td>
 
@@ -103,9 +123,12 @@
                 <td class='field' id='34'></td>
                 <td class='field' id='35'></td>
                 <td class='field' id='36'></td>
+                <td class='field' id='37'></td>
+                <td class='field' id='38'></td>
+                <td class='field' id='39'></td>
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">E</p>
                 </td>
 
@@ -116,9 +139,12 @@
                 <td class='field' id='44'></td>
                 <td class='field' id='45'></td>
                 <td class='field' id='46'></td>
+                <td class='field' id='47'></td>
+                <td class='field' id='48'></td>
+                <td class='field' id='49'></td>
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">F</p>
                 </td>
 
@@ -129,9 +155,12 @@
                 <td class='field' id='54'></td>
                 <td class='field' id='55'></td>
                 <td class='field' id='56'></td>
+                <td class='field' id='57'></td>
+                <td class='field' id='58'></td>
+                <td class='field' id='59'></td>
               </tr>
               <tr>
-                <td class="upper">
+                <td class="upper side">
                   <p class="maps">G</p>
                 </td>
 
@@ -142,6 +171,57 @@
                 <td class='field' id='64'></td>
                 <td class='field' id='65'></td>
                 <td class='field' id='66'></td>
+                <td class='field' id='67'></td>
+                <td class='field' id='68'></td>
+                <td class='field' id='69'></td>
+              </tr>
+              <tr>
+                <td class="upper side">
+                  <p class="maps">D</p>
+                </td>
+
+                <td class='field' id='70'></td>
+                <td class='field' id='71'></td>
+                <td class='field' id='72'></td>
+                <td class='field' id='73'></td>
+                <td class='field' id='74'></td>
+                <td class='field' id='75'></td>
+                <td class='field' id='76'></td>
+                <td class='field' id='77'></td>
+                <td class='field' id='78'></td>
+                <td class='field' id='79'></td>
+              </tr>
+              <tr>
+                <td class="upper side">
+                  <p class="maps">H</p>
+                </td>
+
+                <td class='field' id='80'></td>
+                <td class='field' id='81'></td>
+                <td class='field' id='82'></td>
+                <td class='field' id='83'></td>
+                <td class='field' id='84'></td>
+                <td class='field' id='85'></td>
+                <td class='field' id='86'></td>
+                <td class='field' id='87'></td>
+                <td class='field' id='88'></td>
+                <td class='field' id='89'></td>
+              </tr>
+              <tr>
+                <td class="upper side">
+                  <p class="maps">J</p>
+                </td>
+
+                <td class='field' id='90'></td>
+                <td class='field' id='91'></td>
+                <td class='field' id='92'></td>
+                <td class='field' id='93'></td>
+                <td class='field' id='94'></td>
+                <td class='field' id='95'></td>
+                <td class='field' id='96'></td>
+                <td class='field' id='97'></td>
+                <td class='field' id='98'></td>
+                <td class='field' id='99'></td>
               </tr>
 
             </tbody>
@@ -158,12 +238,12 @@
                 </div>
                 <div class="col-6">
                   <p>Кількість кораблів:</p>
-                    <input class="form-control" id='numberShipStart'type="text" name="">
-                    <p><button class="changeNumberShip">Змінити</button></p>
-                  
+                  <input class="form-control" id='numberShipStart' type="text" name="" value="1">
+                  <p align='center'><button class="changeNumberShip">Змінити</button></p>
+
                 </div>
               </div>
-              <p align="center"><a href='/'><button class="reset">Reset</button></a></p>
+              <p align="center"><button id="reset" class="reset">Reset</button></p>
             </div>
           </div>
         </section>
