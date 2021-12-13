@@ -175,6 +175,7 @@ const model = {
   counterShip: 0,
   allShip: [],
   copyAllPlaceShip:[],
+  isMassage:false,
   shipRemove: function () {
     const ship = this.allShip;
     for (const id of ship) {
@@ -240,8 +241,11 @@ const model = {
     const numberShips = document.querySelector(".numberShip");
     numberShips.textContent = counter;
     if (counter === 0) {
+      if(this.isMassage==false){
       alert("Усі кораблі потоплено. Вітаю!!!");
+        this.isMassage=true;
       this.playAgain();
+      }
     }
   },
   isHit: function (id, e) {
@@ -280,6 +284,7 @@ const model = {
     startGame.allReserveShip = [];
     copyAllPlaceShip=[];
     const td = document.getElementsByClassName("field");
+    this.counterHits=0;
     // for (const item of td) {
     //   if(item.classList.contains('miss')){
     //     item.classList.remove('miss');
@@ -313,12 +318,14 @@ const dynamic = {
       startGame.defineShips();
       model.placeShip();
       model.updateShip();
-
-      model.copyAllPlaceShip=startGame.allPlaceShip;
-      console.log(model.copyAllPlaceShip);
-      model.findShip(startGame.allPlaceShip);
+      model.isMassage=false;
+      // model.copyAllPlaceShip=startGame.allPlaceShip;
+      // console.log(model.copyAllPlaceShip);
+      // model.findShip(startGame.allPlaceShip);
       model.copyAllPlaceShip=[];
       model.copyPlaceShip();
+      model.counterHits=0;
+      model.updateHits();
 
 
       // model.findShipTemp();
@@ -351,10 +358,13 @@ const dynamic = {
       model.updateShip();
 
       model.copyAllPlaceShip=startGame.allPlaceShip;
-      console.log(model.copyAllPlaceShip);
-      model.findShip(startGame.allPlaceShip);
+      // console.log(model.copyAllPlaceShip);
+      // model.findShip(startGame.allPlaceShip);
       model.copyAllPlaceShip=[];
       model.copyPlaceShip();
+      model.isMassage=false;
+      model.counterHits=0;
+      model.updateHits();
 
 
       // model.findShipTemp();
@@ -386,7 +396,7 @@ model.copyPlaceShip();
 
 
 // for beginner start
-model.findShip(startGame.allPlaceShip);
+// model.findShip(startGame.allPlaceShip);
 // model.findShipTemp();
 //end;
 
